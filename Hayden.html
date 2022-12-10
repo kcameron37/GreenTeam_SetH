@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Green.io</title>
+    <link rel="stylesheet" href="hayden.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Home-imgs/bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="videoLayer"></div>
+    <div class="navHeading">
+        <div class="navbar">
+            <div class="logocontainer">
+                <div class="bx bx-menu" id="menu-icon"></div>
+                    <a href="index.html">
+                        <img class="teamLogo" src="Home-imgs/team-logo.png" alt="">
+                    </a>            
+            </div>
+            <div class="navTeam" id="navTeam">
+                <a href="index.html" class="navMember navHeading">Home</a>
+                <b class="navLine">|</b>
+                <a href="Kaitlyn.html" class="navMember">Kaitlyn</a>
+                <a href="Hayden.html" class="navMember">Hayden</a>
+                <a href="Evan.html" class="navMember">Evan</a>
+                <a href="Kiona.html" class="navMember">Kiona</a>
+                <a href="Johnathan.html" class="navMember">Johnathan</a>
+            </div>
+            <div class="navIcon">
+                <img class="contactBtn" src="Home-imgs/contact-icon.svg" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <hr class="hr">
+    <!-- body content starts here -->
+    <div class="mainBody">
+        <div class="mainContainer">
+            <div class="sideBar">
+                <div class="nameContainer">
+                    <div class="memberName">Hayden<br>Leung</div>
+                    <div class="treeIcon">
+                        <img class="tree" src="Hayden-imgs/tree-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="profileContainer">
+                    <div class="profileBg"></div>
+                    <img onmouseover="changeA()" onmouseleave="changeB()" id="memberPic" class="memberPic" src="Home-imgs/member-Hayden.png" alt="">
+                </div>
+            </div>
+            <div class="information">
+                <div class="infoBoxA infoContainer">
+                    <div class="infoBorderTop">
+                        <img class="topCorner corner" src="Hayden-imgs/top-corner.svg" alt="">
+                        <img class="bottomCorner corner" src="Hayden-imgs/bottom-corner.svg" alt="">
+                        <p class="infoTitle">Education</p>
+                        <p class="infoBody"><span class="infoYear">2015</span> CUHK<br><span class="infoProgram">Bachelor of Engineering in Information Engineering</span></p>
+                        <p class="infoBody"><span class="infoYear">2024</span> BCIT<br><span class="infoProgram">Diploma in Digital Design and Development</span></p>
+                    </div>
+                </div>
+                <div class="infoBoxB infoContainer">
+                    <div class="infoBorderTop">
+                        <img class="topCorner corner" src="Hayden-imgs/top-corner.svg" alt="">
+                        <img class="bottomCorner corner" src="Hayden-imgs/bottom-corner.svg" alt="">
+                        <div class="infoTitle">Hobbies</div>
+                        <div class="infoBodyContainerA">
+                            <div class="infoIconContainer">
+                                <div class="infoIcon">
+                                    <img src="Hayden-imgs/bowling-icon.svg" alt="">
+                                </div>
+                                <p>Bowling</p>
+                            </div>
+                            <div class="infoIconContainer">
+                                <div class="infoIcon">
+                                    <img src="Hayden-imgs/badminton-icon.svg" alt="">
+                                </div>  
+                                <p>Badminton</p>
+                            </div>
+                            <div class="infoIconContainer">
+                                <div class="infoIcon">
+                                    <img  src="Hayden-imgs/movie-icon.svg" alt="">
+                                </div>
+                                <p>Movie</p>
+                            </div>
+                            <div class="infoIconContainer">
+                                <div class="infoIcon">
+                                    <img  src="Hayden-imgs/sleep-icon.svg" alt="">
+                                </div>
+                                <p>Sleeping</p>
+                            </div>
+                            <div class="infoIconContainer">
+                                <div class="infoIcon">
+                                    <img src="Hayden-imgs/ux-icon.svg" alt="">
+                                </div>
+                                <p>Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infoBoxC infoContainer">
+                    <div class="infoBorderBottom">
+                        <img class="topCorner corner" src="Hayden-imgs/top-corner.svg" alt="">
+                        <img class="bottomCorner corner" src="Hayden-imgs/bottom-corner.svg" alt="">
+                        <div class="infoProject">
+                            <p class="infoTitle">Personal Projects</p>
+                            <div class="infoBodyContainerB">
+                                <div  id="picA" class="project" onmouseenter="picA()" onmouseleave="picD()"">
+                                    <a >A</a>
+                                </div>
+                                <div  id="picB" class="project" onmouseenter="picB()" onmouseleave="picD()"">
+                                    <a >B</a>
+                                </div>
+                                <div  id="picC" class="project" onmouseenter="picC()" onmouseleave="picD()"">
+                                    <a >C</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infoProjectPic">
+                            <img class="projectThumbnail" id="projectThumbnail" src="Hayden-imgs/project-0.png" alt="">
+                            <p class="projectDesc" id="projectDesc">Green is good for you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialMedia">
+                    <div class="socialBtn">
+                        <img class="socialIcon" src="Hayden-imgs/ins-icon.svg" alt="">
+                    </div>
+                    <div class="socialBtn">
+                        <img class="socialIcon" src="Hayden-imgs/twitter-icon.svg" alt="">
+                    </div>
+                    <div class="socialBtn">
+                        <img class="socialIcon" src="Hayden-imgs/gmail-icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="pictureFrame" class="pictureFrame">
+        <span class="close">&times;</span>
+        <img class="fullPicture" id="fullPicture">
+    </div>
+
+    <script>
+        window.onclick = function (event) {
+            if (!event.target.matches('.bx')) {
+                var dropdowns = document.getElementById("navTeam");
+                if(dropdowns.style.visibility == "visible" && window.innerWidth <= 750){
+                    dropdowns.style.visibility = "hidden";
+                }
+            }
+            if (event.target.matches('.bx')) {
+                var dropdowns = document.getElementById("navTeam");
+                if(dropdowns.style.visibility == "visible"){
+                    dropdowns.style.visibility = "hidden";
+                }else{
+                    dropdowns.style.visibility = "visible";
+                }
+            }
+        }
+        function changeA(){
+            document.getElementById("memberPic").src="Hayden-imgs/member-Hayden-real.png";
+        }
+        function changeB(){
+            document.getElementById("memberPic").src="Home-imgs/member-Hayden.png";
+        }
+        function picA(){
+            document.getElementById("projectThumbnail").src="Hayden-imgs/project-1.png";
+            document.getElementById("projectDesc").innerText="\"Water Landscape (Poster)\"";
+            document.getElementById("projectThumbnail").style.opacity="100%";
+            document.getElementById("projectDesc").style.opacity="100%";
+        }
+        function picB(){
+            document.getElementById("projectThumbnail").src="Hayden-imgs/project-2.png";
+            document.getElementById("projectDesc").innerText="\"World End Station (Vector Drawing)\"";
+            document.getElementById("projectThumbnail").style.opacity="100%";
+            document.getElementById("projectDesc").style.opacity="100%";
+        }
+        function picC(){
+            document.getElementById("projectThumbnail").src="Hayden-imgs/project-3.jpg";
+            document.getElementById("projectDesc").innerText="\"Pollution World (Magazine Cover)\"";
+            document.getElementById("projectThumbnail").style.opacity="100%";
+            document.getElementById("projectDesc").style.opacity="100%";
+        }
+        function picD(){
+            document.getElementById("projectThumbnail").src="Hayden-imgs/project-0.png";
+            document.getElementById("projectDesc").innerText="Green is good for you";
+            document.getElementById("projectThumbnail").style.opacity="20%";
+            document.getElementById("projectDesc").style.opacity="20%";
+        }
+
+        var picture = document.getElementById("pictureFrame");
+        var img = document.getElementById("projectThumbnail");
+        var btn = document.getElementById("picA")
+        var pictureImg = document.getElementById("fullPicture");
+        btn.onclick = function(){
+        picture.style.display = "flex";
+        pictureImg.src = img.src;
+        }
+        var btn = document.getElementById("picB")
+        btn.onclick = function(){
+        picture.style.display = "flex";
+        pictureImg.src = img.src;
+        }
+        var btn = document.getElementById("picC")
+        btn.onclick = function(){
+        picture.style.display = "flex";
+        pictureImg.src = img.src;
+        }
+        picture.onclick = function() { 
+        picture.style.display = "none";
+        }
+
+        function resize() {
+        if (window.innerWidth > 750) {     
+            document.getElementById("navTeam").style.visibility = "visible";
+        }else {
+            document.getElementById("navTeam").style.visibility = "hidden";
+        }
+        }
+        window.addEventListener("resize", resize);
+        </script>
+
+
+</body>
+<footer>
+</footer>
+
+</html>

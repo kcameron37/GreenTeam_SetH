@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Green.io</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Home-imgs/bg-video.mp4" type="video/mp4">
+    </video>
+    <div class="videoLayer"></div>
+    <div class="navHeading">
+        <div class="navbar">
+            <div class="logocontainer">
+                <div class="bx bx-menu" id="menu-icon"></div>
+                <a href="index.html">
+                    <img class="teamLogo" src="Home-imgs/team-logo.png" alt="">
+                </a>
+            </div>
+            <div class="navTeam" id="navTeam">
+                <a href="index.html" class="navMember navHeading">Home</a>
+                <b class="navLine">|</b>
+                <a href="Kaitlyn.html" class="navMember">Kaitlyn</a>
+                <a href="Hayden.html" class="navMember">Hayden</a>
+                <a href="Evan.html" class="navMember">Evan</a>
+                <a href="Kiona.html" class="navMember">Kiona</a>
+                <a href="Johnathan.html" class="navMember">Johnathan</a>
+            </div>
+            <div class="navIcon">
+                <img class="contactBtn" src="Home-imgs/contact-icon.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+    <!-- body content starts here -->
+    <div class="mainBody">
+        <div class="banner">
+            <div class="promotion">
+                <div class="promoText">
+                    <div class="promoHeading">GREEN</div>
+                    <div><span class="promoHeadingEffect">IS GOOD</span><br><span class="promoHeadingEffect">FOR
+                            YOU</span></div>
+                </div>
+                <div class="bannerLeaf">
+                    <img class="leafImage" src="Home-imgs/leaf-icon.png" alt="">
+                </div>
+            </div>
+            <div class="socialMedia">
+                <img class="socialIcon" src="Home-imgs/ins-logo.png" alt=""></a>
+                <img class="socialIcon" src="Home-imgs/twitter-logo.png" alt=""></a>
+                <img class="socialIcon" src="Home-imgs/gmail-logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="teampage">
+            <div class="teamBar">
+                <p class="barText barTeam">Meet The Team</p>
+                <p class="barText barBest">Meet The Best</p>
+            </div>
+            <div class="teamMember">
+                <div class="member">
+                    <div class="profilePic memberKaitlyn">
+                        <img class="memberPic" src="Home-imgs/member-Kaitlyn.png" alt="">
+                        <a class="profileCover" href="Kaitlyn.html">
+                            <p>Team<br>Leader</p>
+                        </a>
+                    </div>
+                    <a class="profileName" href="Kaitlyn.html">
+                        <p>Kaitlyn</p>
+                    </a>
+                </div>
+                <div class="member rev">
+                    <div class="profilePic memberHayden">
+                        <img class="memberPic" src="Home-imgs/member-Hayden.png" alt="">
+                        <a class="profileCover" href="Hayden.html">
+                            <p>The<br>Processor</p>
+                        </a>
+                    </div>
+                    <a class="profileName revName" href="Hayden.html">
+                        <p>Hayden</p>
+                    </a>
+                </div>
+                <div class="member">
+                    <div class="profilePic memberEvan">
+                        <img class="memberPic" src="Home-imgs/member-Evan.png" alt="">
+                        <a class="profileCover" href="Evan.html">
+                            <p>Critical<br>Thinker</p>
+                        </a>
+                    </div>
+                    <a class="profileName" href="Evan.html">
+                        <p>Evan</p>
+                    </a>
+                </div>
+                <div class="member rev">
+                    <div class="profilePic memberKiona">
+                        <img class="memberPic" src="Home-imgs/member-Kiona.png" alt="">
+                        <a class="profileCover" href="Kiona.html">
+                            <p>Problem<br>Solver</p>
+                        </a>
+                    </div>
+                    <a class="profileName revName" href="Kiona.html">
+                        <p>Kiona</p>
+                    </a>
+                </div>
+                <div class="member">
+                    <div class="profilePic memberJohnathan">
+                        <img class="memberPic" src="Home-imgs/member-Johnathan.png" alt="">
+                        <a class="profileCover" href="Johnathan.html">
+                            <p>The<br>Visionary</p>
+                        </a>
+                    </div>
+                    <a class="profileName" href="Johnathan.html">
+                        <p>Johnathan</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <hr class="descHr">
+            <p class="descText">We’re a talented team of all-round good people collaborating with our clients to develop
+                meaningful, differentiated, and
+                authentic brands. We’re open-minded, our clients come from all sectors, from family-run businesses to
+                global corporates
+                and everything in between. It keeps us fresh and the work interesting.</p>
+            <hr class="descHr">
+        </div>
+    </div>
+
+    <script>
+        window.onclick = function (event) {
+            if (!event.target.matches('.bx')) {
+                var dropdowns = document.getElementById("navTeam");
+                if (dropdowns.style.visibility == "visible" && window.innerWidth <= 750) {
+                    dropdowns.style.visibility = "hidden";
+                }
+            }
+            if (event.target.matches('.bx')) {
+                var dropdowns = document.getElementById("navTeam");
+                if (dropdowns.style.visibility == "visible") {
+                    dropdowns.style.visibility = "hidden";
+                } else {
+                    dropdowns.style.visibility = "visible";
+                }
+            }
+        }
+        function resize() {
+            if (window.innerWidth > 750) {
+                document.getElementById("navTeam").style.visibility = "visible";
+            } else {
+                document.getElementById("navTeam").style.visibility = "hidden";
+            }
+        }
+        window.addEventListener("resize", resize);
+    </script>
+
+</body>
+<footer>
+</footer>
+
+</html>
